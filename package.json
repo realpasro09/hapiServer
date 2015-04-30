@@ -1,26 +1,30 @@
 {
-  "name": "hapiServer",
+  "name": "caredforServer",
   "version": "1.0.0",
-  "description": "",
+  "description": "cared for server",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.12.3"
-  },
-  "devDependencies": {
-    "express": "^4.12.3"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --version",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/realpasro09/hapiServer.git"
   },
-  "author": "",
+  "author": "Acklen Avenue",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/realpasro09/hapiServer/issues"
   },
-  "homepage": "https://github.com/realpasro09/hapiServer"
+  "homepage": "https://github.com/realpasro09/hapiServer",
+  "devDependencies": {
+    "hapi": "^8.4.0",
+    "hapi-auth-cookie": "^2.1.0",
+    "require-directory": "^2.1.0"
+  },
+  "dependencies": {
+    "hapi": "^8.4.0",
+    "hapi-auth-cookie": "^2.1.0",
+    "require-directory": "^2.1.0"
+  }
 }
