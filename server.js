@@ -1,20 +1,15 @@
-var Hapi = require('hapi');
+var express = require('express');
+var app = express();
 
-// Create a server with a host and port
-var server = new Hapi.Server();
-server.connection({
-    host: 'localhost',
-    port: 8000
+app.get('/', function (req, res) {
+  res.send('Hello World!');
 });
 
-// Add the route
-server.route({
-    method: 'GET',
-    path:'/hello',
-    handler: function (request, reply) {
-       reply('hello world');
-    }
-});
+var server = app.listen(3000, function () {
 
-// Start the server
-server.start();
+  var host = server.address().address;
+  var port = server.address().port;
+
+  console.log('Example app listening at http://%s:%s', host, port);
+
+});
